@@ -13,7 +13,7 @@ const getMoviesByTerm = (SearchTerm, setMovies) => {
         }
     }).then((response) => {
         console.log(response);
-        setMovies(response)
+        setMovies(response.data.results)
     }
     )
 }
